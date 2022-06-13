@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include <main.h>
+#include "main.h"
 
 // enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 // enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};

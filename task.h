@@ -1,3 +1,5 @@
+#include "main.h"
+
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
 };

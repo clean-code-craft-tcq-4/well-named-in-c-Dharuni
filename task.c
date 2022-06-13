@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "main.h"
+#include "task.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",

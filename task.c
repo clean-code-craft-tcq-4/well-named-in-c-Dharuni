@@ -2,8 +2,6 @@
 #include <assert.h>
 #include "task.h"
 
-extern const int MAX_COLORPAIR_NAME_CHARS;
-
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],

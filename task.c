@@ -12,9 +12,9 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair.majorColor = 
-        (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
+        (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
     colorPair.minorColor =
-        (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
+        (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
     return colorPair;
 }
 
@@ -24,8 +24,8 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
 }
 
 void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
+    MajorColor expectedMajor,
+    MinorColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
@@ -36,8 +36,8 @@ void testNumberToPair(int pairNumber,
 }
 
 void testPairToNumber(
-    enum MajorColor major,
-    enum MinorColor minor,
+    MajorColor major,
+    MinorColor minor,
     int expectedPairNumber)
 {
     ColorPair colorPair;

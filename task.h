@@ -16,6 +16,3 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
-
-extern MajorColor majorcolor;
-extern MinorColor minorcolor;

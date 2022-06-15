@@ -2,6 +2,9 @@
 #include <assert.h>
 #include "main.h"
 
+
+extern const int MAX_COLORPAIR_NAME_CHARS;
+
 int main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
@@ -13,8 +16,6 @@ int main() {
 
     return 0;
 }
-
-
 
 void testNumberToPair(int pairNumber,
     MajorColor expectedMajor,

@@ -13,8 +13,8 @@ void colorCodingReferenceManual(void)
     {
         for(minorColorCount=0;minorColorCount<numberOfMinorColors;minorColorCount++)
         {
-            colorpairreference.majorColor = (MajorColor)majorColorCount;
-            colorpairreference.minorColor = (MinorColor)minorColorCount;
+            colorPairReference.majorColor = (MajorColor)majorColorCount;
+            colorPairReference.minorColor = (MinorColor)minorColorCount;
             int pairNumberReference = GetPairNumberFromColor(&colorPairReference);
             ColorPairToString(&colorPairReference, colorPairManual);
             printf(" %s\t%d\n", colorPairManual,pairNumberReference );

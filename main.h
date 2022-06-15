@@ -11,8 +11,6 @@ extern ColorPair colorpairExtern;
 extern MajorColor majorcolor;
 extern MinorColor minorcolor;
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
-
 ColorPair GetColorFromPairNumber(int pairNumber);
 int GetPairNumberFromColor(const ColorPair* colorPair);
 void colorCodingReferenceManual(void);

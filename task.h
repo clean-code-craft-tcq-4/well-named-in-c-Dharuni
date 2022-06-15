@@ -17,23 +17,5 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
-typedef enum
-{
-   WHITE =0, 
-   RED,
-   BLACK, 
-   YELLOW,
-   VIOLET
- }MajorColor;
- 
-typedef enum
-{
-   BLUE=0, 
-   ORANGE,
-   GREEN, 
-   BROWN,
-   SLATE
-} MinorColor;
-
 extern MajorColor majorcolor;
 extern MinorColor minorcolor;

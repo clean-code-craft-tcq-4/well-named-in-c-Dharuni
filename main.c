@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "main.h"
 
-extern const int MAX_COLORPAIR_NAME_CHAR;
+extern const int MAX_COLORPAIR_NAME_CHARS;
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);

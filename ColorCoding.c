@@ -27,7 +27,7 @@ void colorCodingReferenceManual(void)
 {
     int majorColorCount,minorColorCount;
     ColorPair colorPairReference;
-    char colorPairManual[MAX_COLORPAIR_NAME_CHARS];
+    char colorPairManual[MAX_COLORPAIR];
     printf("\n Color Coding Reference Manual\n");
     printf("Major Color | \t Minor Color | \t Pair Number \n");
     for(majorColorCount=0;majorColorCount<numberOfMajorColors;majorColorCount++)

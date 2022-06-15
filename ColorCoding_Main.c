@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "ColorCoding_Main.h"
 
-extern const int MAX_COLORPAIR_NAME_CHARS;
+extern const int MAX_COLORPAIR;
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);
@@ -21,7 +21,7 @@ void testNumberToPair(int pairNumber,
     MinorColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
-    char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    char colorPairNames[MAX_COLORPAIR];
     ColorPairToString(&colorPair, colorPairNames);
     printf("Got pair %s\n", colorPairNames);
     assert(colorPair.majorColor == expectedMajor);

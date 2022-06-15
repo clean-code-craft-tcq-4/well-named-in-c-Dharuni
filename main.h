@@ -1,14 +1,20 @@
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+typedef enum { WHITE, RED, BLACK, YELLOW, VIOLET } MajorColor;
+ 
+typedef enum { BLUE, ORANGE, GREEN, BROWN, SLATE } MinorColor;
 
 typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
+    MajorColor majorColor;
+    MinorColor minorColor;
 } ColorPair;
 
-void colorCodingReferenceManual(void);
-void ColorPairToString(const ColorPair* colorPair, char* buffer);
+extern ColorPair colorpairExtern;
+extern MajorColor majorcolor;
+extern MinorColor minorcolor;
+
+
 ColorPair GetColorFromPairNumber(int pairNumber);
-int GetPairNumberFromColor(const ColorPair* colorPair)
-void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
-void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
+int GetPairNumberFromColor(const ColorPair* colorPair);
+void colorCodeReferenceManuel(void);
+void testNumberToPair(int pairNumber,MajorColor expectedMajor,MinorColor expectedMinor);
+void testPairToNumber(MajorColor major,MinorColor minor,int expectedPairNumber);
+void ColorPairToString(const ColorPair* colorPair, char* buffer);

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "main.h"
+#include "ColorCoding_Main.h"
 
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
